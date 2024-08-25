@@ -15,7 +15,9 @@ const inputEmail = useRef()
 
 async function getUsers(){
     const usersFromApi = await api.get('/usuarios')
-
+    if (usersFromApi.status!==200) {
+      return
+    }
     setUsers(usersFromApi.data)
 }
 
