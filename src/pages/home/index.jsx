@@ -54,7 +54,7 @@ useEffect(() => {
         <button type='button' onClick={createUsers}>Cadastrar</button>
         </form>
 
-      {users.map((user) => (
+      {users?.map((user) => (
       <div key={user.id} className='card'>
         <div>
           <p>Nome: <span>{user.name}</span></p>
