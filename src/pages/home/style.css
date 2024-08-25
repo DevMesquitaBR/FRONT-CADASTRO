@@ -1,0 +1,84 @@
+.container{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding-top: 100px;
+
+}
+
+h1{
+    color: #ffff;
+    font-size: 30px;
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    padding: 30px;
+    border-radius: 10px;
+    background-color: rgba(0, 0, 0, 0.664);
+    max-width: 50%;
+    width: 400px;
+    margin-bottom: 20px;
+
+    & button {
+        border-radius: 30px;
+        background-color: rosybrown;
+        height: 40px;
+        border: none;
+        font-weight: bold;
+        cursor: pointer;
+        color: floralwhite;
+        font-size: 14px;
+    }
+
+    & button:hover {
+        opacity: 0.8;
+        color: aquamarine;
+    }
+
+    & input {
+       border: 3px solid rosybrown;
+       border-radius: 30px;
+       height: 40px;
+       background-color: rgb(255, 255, 255);
+       font-size: 16px;
+       padding-left: 10px;
+       outline: none;
+
+        
+    }
+}
+
+.card{
+    display: flex;
+    justify-content: space-between;
+    background-color: rgb(139, 139, 139);
+    margin: 10px;
+    padding: 10px;
+    width: 400px;
+    border-radius: 10px;
+    color: white;
+
+    & p {
+        font-weight: bold;
+    }
+
+    & span {
+        font-weight: normal;
+    }
+
+    & button{
+        background-color: transparent;
+        border: none;
+        cursor: pointer;
+        color: #ffff;
+    }
+    & button:hover{
+        font-size: 20px;
+        border: 10px;
+        cursor: pointer;
+
+    }
+}
